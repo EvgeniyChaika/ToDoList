@@ -1,0 +1,114 @@
+.state-toggle:checked ~ .Title {
+    text-decoration: line-through;
+}
+
+.Title {
+    font-size: 25px;
+    font-style: oblique;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    word-wrap: break-word;
+
+}
+
+#buttons {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    float: right;
+}
+
+#content {
+    background-color: burlywood;
+    max-width: 1500px;
+}
+
+#content-field {
+    max-width: 1500px;
+}
+
+#list-header {
+    background-color: sandybrown;
+    max-width: 1500px;
+}
+
+.login-out {
+    margin-left: 10%;
+    height: 40px;
+    width: 80px;
+    font-size: medium;
+    padding: 2px;
+    font-style: oblique;
+}
+
+h2 {
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+}
+
+h1 {
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+#add-new-ad {
+
+    padding-top: 2.5%;
+    padding-right: 10%;
+}
+
+#userReg, #userLog, #add-new-ad {
+    padding-left: 10%;
+    padding-bottom: 2%;
+}
+
+li {
+
+    width: 100%;
+    word-wrap: break-word;
+    float: right;
+    overflow: hidden;
+    display: list-item;
+    max-height: 400px;
+    position: relative;
+    transition: left 2s linear, max-height 2s;
+    left: 0;
+    margin-bottom: 2%;
+    background-image: url("list-notebook.png");
+    border: 1px solid black;
+}
+
+.addTask {
+
+    height: 40px;
+    width: 80px;
+    font-size: medium;
+    padding: 2px;
+    font-style: oblique;
+}
+
+.transit {
+
+    left: 100%;
+    max-height: 0;
+}
+
+ol {
+    overflow: hidden;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#all-content {
+    padding: 2%;
+
+}
+
+.make-input {
+    width: 100%;
+    height: 36px;
+    float:left;
+    margin-bottom: 2.5%;
+    margin-right: 1%;
+}
+

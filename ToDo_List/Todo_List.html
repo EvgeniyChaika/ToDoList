@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="content">
+</div>
+
+<div id="content-field">
+</div>
+
+<script type="text/template" id="start-page">
+    <h1 id="header">Task list</h1>
+    <form id="userLog">
+        <button id="start-register">Register now</button>
+        <p><input type="text" placeholder="login" class="loginUserIn"></p>
+
+        <p><input type="password" placeholder="password" class="passwordUserIn"></p>
+        <input id="submit2" type="submit" value="Login In">
+    </form>
+</script>
+
+<script type="text/template" id="reg">
+    <h1>Registration</h1>
+    <form id="userReg">
+        <p><input type="text" placeholder="login" class="loginUser"></p>
+
+        <p><input type="password" placeholder="password" class="passwordUser"></p>
+
+        <p><input type="text" placeholder="e-mail" class="mailUser"></p>
+        <input id="submit1" type="submit" value="Sign in">
+        <button id="out-register">Quit</button>
+    </form>
+</script>
+
+<script type="text/template" id="add-task">
+    <div id="current-user">
+        <h1>User: <%= Parse.User.current().escape("username") %></h1>
+    </div>
+    <button class="login-out">Login Out</button>
+    <div>
+        <form id="add-new-ad">
+            <input type="text" required placeholder="task content" class="make-input">
+            <button class="addTask">Add task</button>
+        </form>
+    </div>
+    <div id="list-header"><h2>List</h2></div>
+</script>
+
+<script type="text/template" id="ad-template">
+    <div id="all-content">
+        <label id="content-text"><input class="state-toggle" type="checkbox" <%= sold ? 'checked="checked"' : ''%>>
+            <span class="Title"><%= title %></span>
+        </label>
+
+        <div id="buttons">
+            <button class="edit-text">Edit</button>
+            <button class="delete-task">Delete</button>
+            <button class="share-task">Share</button>
+        </div>
+    </div>
+</script>
+
+<script type="text/javascript" src="../jquery-1.11.3.js"></script>
+<script type="text/javascript" src="../underscore.js"></script>
+<script type="text/javascript" src="../hammer.min.js"></script>
+<script type="text/javascript" src="../parse.js"></script>
+<script type="text/javascript" src="ToDo_List.js"></script>
+
+</body>
+</html>
